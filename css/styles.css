@@ -10934,29 +10934,31 @@ p {
   }
   #navbarResponsive.show,
   #navbarResponsive.collapsing {
-    background-color: #0d6efd;
+    background: linear-gradient(135deg, #0d6efd 0%, #071a2d 100%);
     margin-top: 0.75rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.9rem;
     box-shadow: 0 0.75rem 1.75rem rgba(0, 24, 64, 0.28);
     overflow: hidden;
   }
   #navbarResponsive .navbar-nav {
-    align-items: flex-end;
-    text-align: right;
-    gap: 0.25rem;
-    padding: 0.5rem !important;
+    align-items: stretch;
+    text-align: left;
+    gap: 0.35rem;
+    padding: 0.55rem !important;
   }
   #navbarResponsive .nav-link {
     width: 100%;
-    padding: 0.75rem 1rem;
-    border-radius: 0.4rem;
-    transition: background-color 0.2s ease;
+    padding: 0.8rem 0.9rem;
+    border-radius: 0.55rem;
+    color: rgba(255, 255, 255, 0.95);
+    transition: background-color 0.2s ease, transform 0.2s ease;
   }
   #navbarResponsive .nav-link:hover,
   #navbarResponsive .nav-link:focus-visible,
   #navbarResponsive .nav-link.active {
-    background-color: rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(-2px);
   }
 }
 
